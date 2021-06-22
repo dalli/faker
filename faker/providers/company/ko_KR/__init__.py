@@ -1,3 +1,5 @@
+from collections import OrderedDict
+
 from .. import Provider as CompanyProvider
 
 
@@ -355,7 +357,78 @@ class Provider(CompanyProvider):
          '웹서비스',
          '방법론'))
 
-    company_suffixes = ('(주)', '주식회사', '(유)', '유한회사')
+    company_suffixes = OrderedDict((
+        ('(주)', 0.9),
+        ('주식회사', 0.9),
+        ('(유)', 0.1),
+        ('유한회사', 0.1),
+        ('(합)', 0.1),
+        ('합자회사', 0.1)
+    ))
+
+
+    departments = (
+        '총무팀',
+        '경리부',
+        '경영지원팀',
+        '인사과',
+        '재경부',
+        '고객만족팀',
+        '구매부서',
+        '관리부서',
+        '기술지원팀',
+        '기획팀',
+        '전략기획팀',
+        '연구기획팀',
+        '비서실',
+        '생산관리팀',
+        '시설관리팀',
+        '연구실',
+        '영업1팀',
+        '영업기획팀',
+        '영업지원팀',
+        '품질관리팀',
+        '해외사업부',
+        '홍보실',
+        'eBiz팀'
+    )
+
+    
+    positions = (
+        '감사',
+        '부장',
+        '계장',
+        '고문',
+        '공장장',
+        '과장',
+        '과장대리',
+        '실장',
+        '대표',
+        '명예회장',
+        '본부장',
+        '부사장',
+        '부장대리',
+        '부회장',
+        '비서',
+        '상무',
+        '전무',
+        '상임고문',
+        '선임연구원',
+        '책임연구원',
+        '수석연구원',
+        '이사',
+        '차장',
+        '지점장',
+        '팀장',
+        '회장'
+    )
+
+
+    def department_name(self):
+        return self.random_element(self.departments)
+
+    def position_name(self):
+        return self.random_element(self.positions)
 
     def catch_phrase(self):
         """

@@ -2,13 +2,9 @@ from .. import Provider as LoremProvider
 
 
 class Provider(LoremProvider):
-    """Implement lorem provider for ``en_US`` locale.
-
-    Word list is based on the source(s) below, and some words have been removed
-    to make the word list appropriate for public testing.
+    """Implement lorem provider for ``ko_KR`` locale.
 
     Sources:
-
     - https://ko.wiktionary.org/wiki/부록:자주_쓰이는_한국어_낱말_5800
     """
 
@@ -300,5 +296,6 @@ class Provider(LoremProvider):
          '시골', '구름', '잔치', '정확하다', '지우다', '맵다', '김치찌개', '심리적', '교육비', '예술가', '초상화', '잘살다', '체하다', '소중히', '합리적', '미국', '쌍', '오리', '흉내', '할머니', '마침내', '약속하다', 
          '구분하다', '법원', '여보세요', '어두워지다', '냄새', '단순하다', '경영', '시작', '행복하다', '등', '달려들다', '대중교통', '바위', '안전하다', '갖가지', '인종', '캐릭터', '근육', '선물', '양복', '아니하다', 
          '전달하다', '전공', '머무르다', '데리다', '그만', '산소', '직업', '미역', '내용', '진료', '어린애', '분명히', '진출', '작가', '숙제', '액수', '부드럽다', '출발하다', '연세', '등록금', '자주', '결심', 
-         '장례', '웃음', '내년', '불이익', '굳이', '높아지다', '본질', '상관없이', '검정색')
+         '장례', '웃음', '내년', '불이익', '굳이', '높아지다', '본질', '상관없이', '검정색'
+    )
          
