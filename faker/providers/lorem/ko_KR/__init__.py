@@ -299,9 +299,6 @@ class Provider(LoremProvider):
          '장례', '웃음', '내년', '불이익', '굳이', '높아지다', '본질', '상관없이', '검정색'
     )
 
-    word_list = (
-
-    )
 
     yamin_word_list = (
         '머머리',
@@ -662,7 +659,7 @@ class Provider(LoremProvider):
 
 
 ## https://en.wikipedia.org/wiki/List_of_computing_and_IT_abbreviations
-
+    """
     it_abbreviations_list = (
     #!—Shebang
     /.—Slashdot
@@ -2157,3 +2154,4 @@ class Provider(LoremProvider):
     ZPL—Z-level Programming Language
 
     )
+    """
