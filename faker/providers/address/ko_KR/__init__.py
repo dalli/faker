@@ -446,3 +446,7 @@ class Provider(AddressProvider):
         :example 12345
         """
         return self.postcode()
+
+    
+    def country(self):
+        return self.random_element(self.countries)
